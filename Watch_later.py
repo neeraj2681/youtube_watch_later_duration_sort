@@ -27,7 +27,7 @@ import google.auth
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 
-wl = pd.read_csv("./watch_later.csv")
+wl = pd.read_csv("./Watch later.csv")
 # Set the video ID for the video you want to get the duration for
 vid_ids = wl['Playlist Id'][2:]
 # vid_ids = wl[0][2:]
@@ -35,7 +35,7 @@ vid_ids = wl['Playlist Id'][2:]
 
 vid_ids
 
-api_key = "AIzaSyCu_JueBNXPLGb8PZMZNb-tQuDGSGlZJ_U"
+api_key = "Put your API key here"
 
 
 # In[99]:
@@ -68,9 +68,6 @@ for video in vid_ids:
     
 
 
-# In[ ]:
-
-
 ans = pd.DataFrame()
 ans['Title'] = name
 ans['Duration'] = length
@@ -80,31 +77,6 @@ ans = ans.sort_values(by=['Duration'])
 ans.to_csv('watch_later_sorted.csv', index=False)
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
