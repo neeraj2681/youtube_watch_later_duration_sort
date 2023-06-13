@@ -11,10 +11,12 @@ Once the user have their data and this API key with them all they need to do is 
 The program will create a new CSV file, with Title, URL, and duration of videos in the watch later playlist. This CSV file will be sorted based on the duration of videos.
 
 <h4>Downloading the Youtube Data</h4>
-1. Download the Youtube data
-2. Copy the Watch later.csv file from the downloaded data(present inside the playlist directory), and place it in the same directory as the watch_later.py file
-3. You are good to go, run the code and new file named watch_later_sorted.csv will be produced in the same directory
+--Download the Youtube data
+
+--Copy the Watch later.csv file from the downloaded data(present inside the playlist directory), and place it in the same directory as the watch_later.py file
+
+--You are good to go, run the code and new file named watch_later_sorted.csv will be produced in the same directory
 
 <h4>Generating the Data API key</h4>
-1. You'll need to generate the Youtube API key from Google developer's official website, as it is needed to access your the details regarding a particular video id which we're getting from the downloaded Youtube data
+--You'll need to generate the Youtube API key from Google developer's official website, as it is needed to access your the details regarding a particular video id which we're getting from the downloaded Youtube data
   
